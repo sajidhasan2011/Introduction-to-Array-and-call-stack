@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JavaScript Arrays</h2>
+    <p id="demo"></p>
+    <p id="myjoin"></p>
+    <p id="myfirstpop"></p>
+    <p id="mysecondpop"></p>
+
+    <script>
+      var clubs = [
+        "Real Madrid",
+        "FC Barcelona",
+        "Manchester United",
+        "Bashundhara Kings",
+      ];
+      document.getElementById("demo").innerHTML = clubs[3];
+      for (i = 0; i < clubs.length; i++) {
+        document.write(`<br>${i + 1}.${clubs[i]}`);
+      }
+
+      document.getElementById("myjoin").innerHTML = clubs.join("-");
+      clubs.pop();
+      document.getElementById("myfirstpop").innerHTML = clubs.join("(:");
+      clubs.pop();
+      document.getElementById("mysecondpop").innerHTML = clubs.join("(^..^)");
+    </script>
+  </body>
+</html>
